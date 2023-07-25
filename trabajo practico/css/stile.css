@@ -1,0 +1,193 @@
+/* colores */
+:root {
+    --color-primary: #FC7300;
+    --color-secondary: #1F8A70;
+    --color-tertiary: #00425A;
+    --color-dark: #181823;
+    --color-light: #EFF5F5;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: var(--color-primary);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Secciones */
+section {
+    padding: 50px;
+}
+
+/* "Quienes somos" */
+#quienes-somos {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+/* "¿Por qué elegirnos?" */
+#por-que-elegirnos {
+    background-color: var(--color-tertiary);
+    color: white;
+}
+
+/* "Propuesta educativa" */
+#propuesta-educativa {
+    background-color: var(--color-dark);
+    color: white;
+}
+
+/* "Últimas noticias" */
+#ultimas-noticias {
+    background-color: var(--color-light);
+}
+
+/* Formulario de contacto */
+#formulario-contacto {
+    padding: 20px;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Pie de la página */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+footer .redes-sociales a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer .nombre-instituto {
+    text-align: center;
+    flex: 1;
+}
+
+footer .contactos {
+    text-align: center;
+    flex: 1;
+    margin-top: 10px;
+}
+
+header {
+    background-image: url("../img/dibujos-animados-escuela-primaria_24640-55452.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 200px;
+}
+
+header h1 {
+    color: #181823;
+    margin-top: 20px;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+}
+
+/* pantallas de tablet  */
+@media (max-width: 765px) {
+    header {
+        padding: 100px;
+    }
+
+    #quienes-somos .quienes-somos-content,
+    #por-que-elegirnos .por-que-elegirnos-content {
+        flex-direction: column;
+    }
+
+    #quienes-somos .quienes-somos-img,
+    #por-que-elegirnos .por-que-elegirnos-img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #ultimas-noticias .noticia {
+        flex-direction: column;
+    }
+
+    #ultimas-noticias img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer .contactos {
+        margin-top: 0;
+    }
+}
+
+/*  pantallas de teléfono */
+@media (max-width: 320px) {
+    header {
+        padding: 50px;
+    }
+
+    #quienes-somos .quienes-somos-content,
+    #por-que-elegirnos .por-que-elegirnos-content,
+    #ultimas-noticias .noticia {
+        flex-direction: column;
+    }
+
+    #quienes-somos .quienes-somos-img,
+    #por-que-elegirnos .por-que-elegirnos-img,
+    #ultimas-noticias img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+.volver-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--color-secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
